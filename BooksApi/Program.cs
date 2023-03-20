@@ -8,7 +8,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddDbContext<APIDbContext>(x => x.UseSqlServer(
     "Data Source = KOMPUTER; DataBase=DataBooksAPI; Persist Security Info = false;integrated security=true; trustServerCertificate=true"
-    //"server=KOMPUTER;database=BooksDB;trusted_connection=true;"
     ));
 
 builder.Services.AddEndpointsApiExplorer();
